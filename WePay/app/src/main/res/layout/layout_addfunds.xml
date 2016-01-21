@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/groupIcon"
+            android:layout_width="155dp"
+            android:layout_height="130dp"
+            android:src="@drawable/group1" />
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="20dp"
+            android:text="NAME:"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/groupFunds"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:text="Funds Available:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            />
+
+        <TextView
+            android:id="@+id/numberofMembers"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="80dp"
+            android:text="Number of Members:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="77dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:text="DESCRIPTION:"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/paymentArea"
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/addAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Enter amount you would like to contribute..."
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/addPay"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Add Funds!"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

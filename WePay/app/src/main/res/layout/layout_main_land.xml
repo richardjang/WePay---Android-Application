@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="1dp"
+
+        >
+
+        <Button
+            android:id="@+id/newsLand"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/feed"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/addLand"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/newgroup"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/searchLand"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/search"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/settingsLand"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/settings"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>

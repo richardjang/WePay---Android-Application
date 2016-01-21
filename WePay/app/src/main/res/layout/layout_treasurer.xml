@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/groupIcon"
+            android:layout_width="155dp"
+            android:layout_height="130dp"
+            android:src="@drawable/group1" />
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="20dp"
+            android:text="NAME:"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/treasurerArea"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="232dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/history"
+                android:inputType="textMultiLine"
+                android:layout_width="fill_parent"
+                android:textAlignment="center"
+                android:layout_height="30dp"
+                android:text="Payment History"
+                android:textSize="25dp"
+                />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Cash Out"
+            android:id="@+id/button2"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.25" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
